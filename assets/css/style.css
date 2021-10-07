@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.questions{
+    background-color: lightgoldenrodyellow;
+    width: 30%;
+    visibility: hidden;
+    
+}
+.answerButtons{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.answerBtn{
+    height: 50px;
+}
