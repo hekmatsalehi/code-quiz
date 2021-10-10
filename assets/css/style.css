@@ -4,18 +4,133 @@
     padding: 0;
 }
 
-.questions{
-    background-color: lightgoldenrodyellow;
-    width: 30%;
-    visibility: hidden;
-    
+body {
+    font-family: sans-serif;
+    background-color: rgb(234, 220, 195);
 }
+
+.viewHighscore  {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+.startQuizBox, .questions, .result, .savedHighScore{
+    background-color: rgb(234, 220, 195);
+    border: 5px solid rgb(154, 132, 94);
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+      
+}
+
+#timer{
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+h1, h2, h3, h4{
+    text-align: center;
+}
+#start-quiz{
+   
+    font-weight: bold;
+    height: 12%;
+    width: 20%;
+    background-color: rgb(196, 174, 133);
+    border-radius: 5px;
+    margin-left: 40%;
+    margin-top: 10%;
+     
+}
+
+.questions, .result, .savedHighScore{
+    display: none;
+}
+
 .answerButtons{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    margin: 25px 100px 5px 100px;
 }
 
-.answerBtn{
-    height: 50px;
+#alertUser{
+    padding-left: 108px ;
+}
+
+.correctAns{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+.initial{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px 0px 0px 25%;
+    font-size: 18px;
+    
+}
+
+.initial h4 {
+    padding: 10px;
+}
+
+.choice{
+    height: 40px;
+    font-size: 16px;
+    background-color: rgb(239, 221, 185);
+    border-radius: 5px;
+    margin: 7px;
+
+}
+.choice:hover{
+    background-color: rgb(196, 174, 133);
+    cursor: pointer;
+    
+}
+
+#userInitial{
+    padding: 10px;
+}
+
+#submitBtn{
+    padding: 5%;
+    width: 30%;
+    font-weight: bold;
+    background-color: rgb(196, 174, 133);
+    border-radius: 5px;
+    margin: 10px 105px;
+   
+}
+
+.savedHighScore h4{
+    padding: 5px;
+    color: rgb(15, 15, 57);
+    display: flex;  
+}
+
+
+#clearHighscores, #goBack{
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(196, 174, 133);
+    border-radius: 5px;
+      
 }

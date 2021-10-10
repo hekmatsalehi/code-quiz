@@ -7,11 +7,17 @@
     <link  rel="stylesheet" href="./assets/css/style.css"/>
     <title>Code Quiz</title>
 </head>
-<body>
 
-    <h1>Please Click the Button To Start the Quiz</h1>
-    <button id="start-quiz" type="button">Start Quiz</button>
-    
+<body>
+    <header class="viewHighscore">
+        <a href="#" id="highscore">View Highscores</a>
+    </header>
+
+    <div class="startQuizBox">
+        <h1>Please Click the Button To Start the Quiz</h1>
+        <p>This is a time based quiz. You have 60 seconds to answer the questions. Remember that incorrect answer will decrease your time by ten seconds.</p>
+        <button id="start-quiz" type="button">Start Quiz</button>
+    </div>
     
 
     <div class="questions">
@@ -21,9 +27,29 @@
         <div class="answerButtons">
            
         </div>
+        <div id="alertUser"></div>
+    </div>
+
+    <div class="result">
+        <h3>Quiz Ended!</h3>
+        <div class="correctAns"></div>
+        <div class="initial">
+            <h4>Initial</h4>
+            <input type="text" id="userInitial" placeholder="Please write your initial">
+            <button id="submitBtn" type="submit">Submit</button>
+        </div>
+        
     </div>
     
 
+    <div class="savedHighScore">
+        <h3>Highscores</h3>
+        <div id="highscoreDetail"></div>
+        <div class="highScoreBtn">
+            <button type="button" id="clearHighscores">Clear Highscores</div>
+            <button type="button" id="goBack">Go Back</div>
+        </div>
+    </div>
 
 
     <script src="./assets/js/script.js"></script>
