@@ -149,7 +149,7 @@ function viewHighscore() {
     var scoreCountObject = JSON.parse(storedHighscore);
     for ( ; i < scoreCountObject.length; i++) {
         var newHighscore = document.createElement("h4");
-        newHighscore.innerHTML = scoreCountObject[i].initial + ": " + scoreCountObject[i].saveCorrectAns;
+        newHighscore.innerHTML = scoreCountObject[i].initial + " - " + scoreCountObject[i].saveCorrectAns;
         highscoreDetailEl.appendChild(newHighscore)
     }
 }

@@ -16,6 +16,11 @@ body {
 a {
     text-decoration: none;
     font-size: 18px;
+    
+}
+
+a:hover {
+    color: black;
 }
 .startQuizBox, .questions, .result, .savedHighScore{
     background-color: rgb(234, 220, 195);
@@ -60,6 +65,12 @@ h1, h2, h3, h4{
      
 }
 
+#start-quiz:hover, #clearHighscores:hover, #goBack:hover, #submitBtn:hover {
+    opacity: 0.8;
+    border: 2px solid black; 
+
+} 
+
 .questions, .result, .savedHighScore{
     display: none;
 }
@@ -74,11 +85,16 @@ h1, h2, h3, h4{
     padding-left: 108px ;
 }
 
+.result h3 {
+    font-size: 25px;
+}
+
 .correctAns{
     font-size: 18px;
     text-align: center;
     padding-top: 10px;
 }
+
 .initial{
     display: flex;
     flex-direction: column;
@@ -90,6 +106,10 @@ h1, h2, h3, h4{
 
 .initial h4 {
     padding: 10px;
+}
+#userInitial {
+    font-size: 16px;
+    height: 35px;
 }
 
 .choice{
@@ -120,10 +140,19 @@ h1, h2, h3, h4{
    
 }
 
+.highScoreBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;  
+}
+.savedHighScore h3 {
+    font-size: 25px;
+}
 .savedHighScore h4{
     padding: 5px;
     color: rgb(15, 15, 57);
-    display: flex;  
+    display: flex;
+    
 }
 
 
@@ -132,5 +161,6 @@ h1, h2, h3, h4{
     font-weight: bold;
     background-color: rgb(196, 174, 133);
     border-radius: 5px;
+    margin: 5px;
       
 }
