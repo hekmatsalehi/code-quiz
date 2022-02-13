@@ -6,7 +6,7 @@
 
 body {
     font-family: sans-serif;
-    background-color: rgb(234, 220, 195);
+    background-color: rgb(227, 219, 206);
 }
 
 .viewHighscore  {
@@ -163,4 +163,27 @@ h1, h2, h3, h4{
     border-radius: 5px;
     margin: 5px;
       
+}
+
+@media only screen and (max-width: 600px) {
+    .startQuizBox, .questions, .result, .savedHighScore{
+        background-color: rgb(234, 220, 195);
+        border: 5px solid rgb(154, 132, 94);
+        width: 450px;
+        height: 300px;
+          
+    }
+    .choice{
+        height: 30px;
+        font-size: 12px;    
+    }
+    #submitBtn{
+        margin: 10px 75px;
+       
+    }
+    h1 {
+        font-size: 20px;
+        padding: 15px;
+        margin-top: px;
+    }
 }
